@@ -21,12 +21,14 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <SmoothScrolling >
-        <body className="min-h-full flex flex-col"><Cursor />
-  {children}</body>
-      </SmoothScrolling>
+      <body className="min-h-full flex flex-col">
+        <Cursor />
+        <SmoothScrolling>
+          {children}
+        </SmoothScrolling>
+      </body>
     </html>
   );
 }

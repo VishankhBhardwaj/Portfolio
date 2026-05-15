@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 export default function TextReveal() {
-  const textToAnimate = "";
+  const textToAnimate = "I'm an AI & full-stack engineer crafting cinematic interfaces and shipping GenAI products end-to-end. I obsess over fast loads, expressive motion, and systems that feel inevitable.";
   const words = textToAnimate.match(/[\p{L}\p{N}]+[^\s\p{L}\p{N}]?|[^\s]/gu) || [];
   const containerVariants = {
     hidden: {
@@ -21,7 +21,7 @@ export default function TextReveal() {
     hidden: {
       opacity: 0,
       y: 20,
-      filter: "blur(10px)"
+      filter: "blur(0px)"
     },
     visible: {
       opacity: 1,
@@ -29,12 +29,11 @@ export default function TextReveal() {
       filter: "blur(0px)"
     }
   };
-  return <div className="flex items-center justify-center font-sans p-4">
+  return <div className="flex items-center justify-center font-sans p-4 ">
       <motion.div style={{
       display: "flex",
       flexWrap: "wrap",
-      justifyContent: 'center'
-    }} variants={containerVariants} initial="hidden" animate="visible" className="text-2xl font-bold text-center mask-r-from-0.5 max-w-5xl leading-relaxed">
+    }} variants={containerVariants} initial="hidden" animate="visible" className="text-sm font-bold text-center mask-r-from-0.5 max-w-5xl leading-relaxed ">
         {words.map((word, index) => <motion.span key={index} variants={childVariants} transition={{
         duration: 0.8,
         ease: [0.25, 0.46, 0.45, 0.94]
