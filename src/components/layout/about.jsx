@@ -55,17 +55,17 @@ export default function About() {
                 />
 
             </div>
-            <div className='flex items-center gap-3 text-xs tracking-[0.3em] uppercase t mb-10 h-[20%] text-[#f5f2ed] px-4'>
+            <div className='flex items-center gap-3 text-xs tracking-[0.3em] uppercase t mb-10 h-[20%] text-[#f5f2ed] px-4 py-6'>
                 <span>01</span>
                 <span className='h-px w-8 bg-[#e4ded7]'></span>
                 <span>About</span>
             </div>
             <div className=' md:flex md:flex-row md:justify-around'>
                 {/* tech-stack */}
-                <div className='  md:mt-auto md:w-[50%] '>
+                <div className='md:mt-auto md:w-[50%] '>
                     <motion.div variants={textVariants} initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true }} className='flex flex:row justify-center items-center '>
+                        viewport={{ once: false }} className='flex flex:row justify-center items-center '>
                         <p className='text-white text-xl ml-5'>I'm an AI & full-stack engineer crafting cinematic interfaces and shipping GenAI products end-to-end. I obsess over fast loads, expressive motion, and systems that feel inevitable.</p>
                     </motion.div>
                     <motion.div className=' flex flex-wrap mt-5 p-2 gap-2'>
@@ -76,7 +76,7 @@ export default function About() {
                                 variants={textVariants}
                                 initial="hidden"
                                 whileInView="visible"
-                                viewport={{ once: true }}
+                                viewport={{ once: false }}
                                 className="
     text-white/70
     text-sm
@@ -110,7 +110,7 @@ export default function About() {
                     transitionSpeed={1200}
                     scale={1.02}
                     glareEnable={false}>
-                    <div>
+                    <div className='shadow-2xl shadow-white/30'>
                         <motion.div variants={textVariants} initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }} className='md:col-span-5 grid grid-cols-2 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/10 bg-black opacity-90'>

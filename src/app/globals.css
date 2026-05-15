@@ -33,3 +33,6 @@ body {
   opacity: 0.35;
   pointer-events: none;
 }
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
