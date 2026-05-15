@@ -8,6 +8,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
+import Link from "next/link";
 export default function Hero() {
     const { scrollY } = useScroll();
     const nameY = useTransform(scrollY, [0, 500], [0, -200]);

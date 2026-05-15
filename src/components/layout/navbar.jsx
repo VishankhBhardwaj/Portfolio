@@ -23,9 +23,18 @@ export default function Navbar() {
             </div>
             <div className="  w-[20%] max-sm:w-[45%] sm:w-[30%] md:w-[25%] lg:w-[20%]">
                 <ul className="font-bold flex flex:row justify-around py-4 animate__animated animate__fadeInUp text-[#e4ded7] gap-3">
-                    <div data-blobity className="w-[13%] h-[50px] text-center max-sm:w-auto"><li >GH</li></div>
-                    <div data-blobity className=" w-[13%] h-[50px] text-center max-sm:w-auto"><li>LN</li></div>
-                    <div data-blobity className="  w-[13%] h-[50px] text-center max-sm:w-auto"><li>LC</li></div>
+                    <div data-blobity className="w-[13%] h-[50px] text-center max-sm:w-auto"><Link href="https://github.com/VishankhBhardwaj"
+                    target="_blank"
+                    aria-label="GITHUB"><li >GH</li></Link></div>
+                    <div data-blobity className=" w-[13%] h-[50px] text-center max-sm:w-auto"><Link
+                    
+                    href="https://www.linkedin.com/in/vishankh/"
+                    target="_blank"
+                    aria-label="LINKEDIN"><li>LN</li></Link></div>
+                    <div data-blobity className="  w-[13%] h-[50px] text-center max-sm:w-auto"><Link
+                    href="https://www.linkedin.com/in/vishankh/"
+                    target="_blank"
+                    aria-label="LEETCODE"><li>LC</li></Link></div>
                 </ul>
             </div>
         </div>
