@@ -53,7 +53,7 @@ const Projectcard = () => {
                 viewport={{ amount: 0.1 }}
                 className='flex flex-col gap-4 md:flex-row md:justify-between md:items-center '>
                 <div className='flex flex-col gap-4 '>
-                    <h3 className='font-bold text-white text-3xl md:text-5xl'>Nebula Ai</h3>
+                    <h3  className='font-bold text-white text-3xl md:text-5xl'>Nebula Ai</h3>
                     <p className='mt-2 text-md md:text-lg text-white/40'>An autonomous research agent that synthesizes papers in real time.</p>
                     <div className='flex flex-row flex-wrap gap-2'>
                         {techStack.map((t, i) => (

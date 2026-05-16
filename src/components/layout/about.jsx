@@ -55,7 +55,7 @@ export default function About() {
                 />
 
             </div>
-            <div className='flex items-center gap-3 text-xs tracking-[0.3em] uppercase t mb-10 h-[20%] text-[#f5f2ed] px-4 py-6'>
+            <div  className='flex items-center gap-3 text-xs tracking-[0.3em] uppercase t mb-10 h-[20%] text-[#f5f2ed] px-4 py-6'>
                 <span>01</span>
                 <span className='h-px w-8 bg-[#e4ded7]'></span>
                 <span>About</span>
@@ -110,7 +110,7 @@ export default function About() {
                     transitionSpeed={1200}
                     scale={1.02}
                     glareEnable={false}>
-                    <div className='shadow-2xl shadow-white/30'>
+                    <div className='shadow-2xl shadow-white/30 rounded-2xl'>
                         <motion.div variants={textVariants} initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }} className='md:col-span-5 grid grid-cols-2 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/10 bg-black opacity-90'>

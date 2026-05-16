@@ -16,7 +16,7 @@ export default function Cursor() {
       invert: true,
 
       magnetic: true,
-
+      mode:"bouncy",
       radius: 5,
       focusableElementsOffsetX:5,
       focusableElementsOffsetY:6,

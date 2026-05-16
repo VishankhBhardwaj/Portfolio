@@ -11,7 +11,7 @@ export default function Work(){
                 <span>Selected Work</span>
             </div>
             <motion.div className="relative p-4  md:flex md:flex-row md:justify-between">
-                <motion.h2
+                <motion.h2 
                     initial={{ y: 60, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.7, ease: "easeOut" }}

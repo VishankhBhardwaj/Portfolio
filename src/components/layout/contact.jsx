@@ -14,7 +14,10 @@ export default function Contact() {
                 <span className='h-px w-8 bg-[#e4ded7]'></span>
 
             </div>
-            <div className=" px-5"><div class="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-2 text-white/40">Based in</div><div class="text-xl">Earth — open to remote</div></div>
+            <div className=" px-5">
+                <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-2 text-white/40">Based in</div>
+                <div className="text-xl">Earth — open to remote</div>
+                </div>
             <motion.div className="relative p-4 ">
                 <motion.h2
                     initial={{ y: 60, opacity: 0 }}
