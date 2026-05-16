@@ -1,17 +1,17 @@
 "use client"
+import TerminalDemo from "../effects/terminal-demo";
 import Skillcard from "./skillcard";
 import { motion } from "framer-motion";
-
 export default function Skills() {
     return (
-        <section id="skills" className='relative w-screen min-h-screen bg-[#0E1016] opacity-60 p-3'>
+        <section id="skills" className='relative w-screen min-h-screen bg-[#0E1016] p-3 md:p-24'>
             <div className="absolute inset-0 z-0">
 
                 <div
                     className="
         absolute
-        top-[10%]
-        left-[-10%]
+        top-[5%]
+        left-[70%]
         w-[400px]
         h-[400px]
         rounded-full
@@ -23,8 +23,8 @@ export default function Skills() {
                 <div
                     className="
         absolute
-        bottom-[10%]
-        right-[-10%]
+        bottom-[5%]
+        right-[70%]
         w-[350px]
         h-[350px]
         rounded-full
@@ -54,7 +54,7 @@ export default function Skills() {
                 <span className='h-px w-8 bg-[#e4ded7]'></span>
                 <span>Technical Arsenal</span>
             </div>
-            <motion.div className="p-4">
+            <motion.div className="relative p-4  md:flex md:flex-row md:justify-between">
                 <motion.h2
                     initial={{ y: 60, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -64,9 +64,15 @@ export default function Skills() {
                 >
                     A toolkit for <br /> ambitious ideas.
                 </motion.h2>
+                <motion.div
+                    initial={{ x: 50, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    viewport={{ amount: 0.3 }}
+                    className="absolute right-3 -top-50 hidden md:block" >
+                    <TerminalDemo />
+                </motion.div>
             </motion.div>
-
-            {/* Outer: clips and scrolls. Inner: w-max on mobile forces overflow, grid on md+ */}
             <div className="mt-4 p-4 w-full overflow-x-auto hide-scrollbar scroll-smooth">
                 <div className="flex flex-row gap-5 w-max md:w-full md:grid md:grid-cols-3">
                     <motion.div initial={{ y: 60, opacity: 0 }}

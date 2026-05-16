@@ -15,7 +15,7 @@ export default function Hero() {
     const imageY = useTransform(scrollY, [0, 500], [0, -300]);
     const opacity = useTransform(scrollY, [0, 300], [1, 0]);
     return (
-        <section className=" w-screen h-screen bg-[url('/hero.jpg')] bg-cover bg-center">
+        <section className="w-screen h-screen bg-[url('/hero.jpg')] bg-cover bg-center">
             <div className="absolute left-0 top-0 right-0 bottom-0 h-full w-full bg-[#0E1016] mix-blend-color"></div>
             <Navbar />
             <div className="w-full max-sm:h-[55%] md:h-[70%] flex flex-col items-center ">

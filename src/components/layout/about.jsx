@@ -10,7 +10,7 @@ export default function About() {
     const stack = ["TypeScript", "React", "Next.js", "Node.js", "Python", "PyTorch", "LangChain", "Postgres", "AWS", "Docker"];
 
     return (
-        <section id="about" className='relative w-screen min-h-screen bg-[#0E1016] overflow-hidden opacity-60 p-3'>
+        <section id="about" className='relative w-screen min-h-screen bg-[#0E1016] overflow-hidden p-3 md:p-24'>
             <div className="absolute inset-0 z-0">
 
                 <div
