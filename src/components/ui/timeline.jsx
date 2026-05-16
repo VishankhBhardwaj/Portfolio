@@ -1,7 +1,6 @@
 "use client";;
 import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
-
 export const Timeline = ({
   data
 }) => {
@@ -18,7 +17,7 @@ export const Timeline = ({
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 50%"],
+    offset: ["start 10%", "end 100%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -46,13 +45,18 @@ export const Timeline = ({
               </h3>
             </div>
 
-            <div className="relative pl-20 pr-4 md:pl-4 w-full">
+            <motion.div
+              initial={{ x: 60, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              viewport={{ margin: "-100px" }}
+              className="relative pl-20 pr-4 md:pl-4 w-full md:border md:border-white/20 hover:border-white/30 md:p-5 shadow-lg hover:shadow-2xl hover:shadow-white/10 transition-all duration-500 ease-out">
               <h3
                 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                 {item.title}
               </h3>
               {item.content}{" "}
-            </div>
+            </motion.div>
           </div>
         ))}
         <div

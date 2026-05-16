@@ -6,16 +6,16 @@ import Skills from "../components/layout/skills";
 import Link from "next/link";
 import Work from "../components/layout/work";
 import Experience from "../components/layout/experience";
+import ProblemSolving from "../components/layout/problemSolving";
+import Contact from "../components/layout/contact";
+import Footer from "../components/layout/footer";
+import PortalHero from "../components/effects/PortalHero";
+import Main from "../components/layout/main";
 export default function Home() {
   return (
     <>
-    <main className="flex flex-col items-center justify-center overflow-hidden">
-        <Hero/>
-        <About/>
-        <Skills/>
-        <Work/>
-        <Experience/>
-      </main>
+      {/* <PortalHero />  */}
+      <Main />
     </>
   );
 }
