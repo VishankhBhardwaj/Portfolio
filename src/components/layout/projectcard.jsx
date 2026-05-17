@@ -26,7 +26,7 @@ const Projectcard = ({ project, index }) => {
                     className="
       w-full
       rounded-xl
-      grayscale
+      md:grayscale
       group-hover:grayscale-0
       shadow-xl
       shadow-white/10

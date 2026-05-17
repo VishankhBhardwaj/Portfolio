@@ -78,7 +78,7 @@ export default function Skills() {
                 </motion.div>
             </motion.div>
             <div className="mt-4 p-4 w-full overflow-x-auto hide-scrollbar scroll-smooth">
-                <div className="flex flex-row gap-5 w-max md:w-full md:grid md:grid-cols-3">
+                <div className="flex flex-row gap-5 w-max md:w-full md:grid md:grid-cols-3 hide-scrollbar">
                     {skillsData.map((category, index) => (
                         <motion.div
                             key={index}
