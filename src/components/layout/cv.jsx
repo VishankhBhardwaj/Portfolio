@@ -26,6 +26,7 @@ export default function CV(){
     group
     hover:shadow-xl
     hover:shadow-white/5
+    mt-5
   "
         >
 

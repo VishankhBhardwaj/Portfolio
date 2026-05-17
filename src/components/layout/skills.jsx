@@ -60,9 +60,9 @@ export default function Skills() {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
                     viewport={{ margin: "-100px" }}
-                    className="font-bold text-4xl md:text-6xl lg:text-8xl"
+                    className="font-serif font-bold text-4xl md:text-6xl lg:text-7xl text-white text-glow"
                 >
-                    A toolkit for <br /> ambitious ideas.
+                    A toolkit for <br /> <span className="chrome-text">ambitious ideas.</span>
                 </motion.h2>
                 <motion.div
                     initial={{ x: 50, opacity: 0 }}

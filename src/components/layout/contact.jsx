@@ -4,7 +4,32 @@ import { InputField } from "../ui/inputComponent";
 import { Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import CV from "./cv";
+import { useState } from "react";
+import { toast } from "sonner"
+import axios from "axios";
 export default function Contact() {
+    const [form, setForm] = useState({
+        name: "",
+        email: "",
+        message: "",
+    })
+    const handleSubmit = async () => {
+        try {
+            
+            const res = await axios.post("/api/contact", {
+                name: form.name,
+                email: form.email,
+                message: form.message
+            });
+            toast(res.message);
+        } catch (error) {
+            setForm({
+                name: "",
+                email: "",
+                message: "",
+            });
+        }
+    }
     return (
         <section id="skills" className='relative w-screen min-h-screen bg-black p-3 md:p-24 flex flex-col gap-3'>
 
@@ -17,7 +42,7 @@ export default function Contact() {
             <div className=" px-5">
                 <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-2 text-white/40">Based in</div>
                 <div className="text-xl">Earth — open to remote</div>
-                </div>
+            </div>
             <motion.div className="relative p-4 ">
                 <motion.h2
                     initial={{ y: 60, opacity: 0 }}
@@ -33,9 +58,9 @@ export default function Contact() {
             <div className="md:flex md:flex-row w-full md:gap-7">
                 <div className="flex flex-col  w-full h-full gap-4">
                     <div className="p-2 flex flex-col gap-5  w-full h-full">
-                        <InputField />
+                        <InputField form={form} setForm={setForm} />
                     </div>
-                    <Button data-blobity className="rounded-4xl text-black bg-white font-bold leading-relaxed h-12 md:h-13 md:w-50 transition-all duration-300 ease-out hover:text-black" variant="outline">SEND MESSAGE <span className="text-"><Send /></span></Button>
+                    <Button onClick={handleSubmit} data-blobity className="rounded-4xl text-black bg-white font-bold leading-relaxed h-12 md:h-13 md:w-50 transition-all duration-300 ease-out hover:text-black" variant="outline">SEND MESSAGE <span className="text-"><Send /></span></Button>
                 </div>
                 <CV />
             </div>
