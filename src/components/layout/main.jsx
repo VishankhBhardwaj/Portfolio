@@ -15,7 +15,7 @@ export default function Main(){
             <Skills/>
             <Work/>
             <Experience/>
-            <ProblemSolving/>
+            {/* <ProblemSolving/> */}
             <Contact/>
             <Footer/>
           </main>
