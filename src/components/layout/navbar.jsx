@@ -5,7 +5,7 @@ export default function Navbar() {
         <div className=" w-full h-[20%] flex flex:row flex-row px-5 py-6 justify-between items-center">
             <div className="border-2 border-white rounded-md  w-[15%] h-[50%]  ml-[5%] mt-[1%] font-bold animate__animated animate__fadeInUp text-[#e4ded7] max-sm:w-[45%] max-sm:h-auto max-sm:py-2 max-sm:ml-[3%] max-sm:mt-0 sm:w-[25%] md:w-[20%] lg:w-[15%] hidden  md:flex md:flex:row justify-center items-center" data-blobity>
                 <Link
-                    href="www.gmail.com"
+                    href="www.vishankh.dev"
                     target="_blank"
                     aria-label="CONNECT WITH ME">
                     <button>
@@ -14,7 +14,7 @@ export default function Navbar() {
             </div>
             <div className="border-2 border-white rounded-full  w-[7%] h-[50%] flex flex:row justify-center items-center ml-[5%] mt-[1%] font-bold animate__animated animate__fadeInUp text-[#e4ded7] max-sm:w-[12%] max-sm:h-auto max-sm:py-2 max-sm:px-5 max-sm:ml-[3%] max-sm:mt-0 sm:w-[25%] md:w-[20%] lg:w-[15%] md:hidden relative bottom-3" data-blobity>
                 <Link
-                    href="www.gmail.com"
+                    href="www.vishankh.dev"
                     target="_blank"
                     aria-label="CONNECT WITH ME">
                     <button>
@@ -32,7 +32,7 @@ export default function Navbar() {
                     target="_blank"
                     aria-label="LINKEDIN"><li>LN</li></Link></div>
                     <div data-blobity className="  w-[13%] h-[50px] text-center max-sm:w-auto"><Link
-                    href="https://www.linkedin.com/in/vishankh/"
+                    href="https://leetcode.com/u/Dark_Fello/"
                     target="_blank"
                     aria-label="LEETCODE"><li>LC</li></Link></div>
                 </ul>

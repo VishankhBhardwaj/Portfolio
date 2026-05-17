@@ -2,7 +2,11 @@
 import TerminalDemo from "../effects/terminal-demo";
 import Skillcard from "./skillcard";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { skillsData } from "@/data/skills";
 export default function Skills() {
+    
+    const [activeIndex, setActiveIndex] = useState(0);
     return (
         <section id="skills" className='relative w-screen min-h-screen bg-[#0E1016] p-3 md:p-24'>
             <div className="absolute inset-0 z-0">
@@ -69,24 +73,21 @@ export default function Skills() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
                     viewport={{ amount: 0.3 }}
-                    className="absolute right-3 -top-50 hidden md:block" >
+                    className="absolute right-3 -top-65 hidden md:block" >
                     <TerminalDemo />
                 </motion.div>
             </motion.div>
             <div className="mt-4 p-4 w-full overflow-x-auto hide-scrollbar scroll-smooth">
                 <div className="flex flex-row gap-5 w-max md:w-full md:grid md:grid-cols-3">
-                    <motion.div initial={{ y: 60, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.7, ease: "easeOut" }}
-                        viewport={{ margin: "-100px" }} className="w-72 md:w-auto"><Skillcard /></motion.div>
-                    <motion.div initial={{ y: 60, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.7, ease: "easeOut" }}
-                        viewport={{ margin: "-100px" }} className="w-72 md:w-auto"><Skillcard /></motion.div>
-                    <motion.div initial={{ y: 60, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.7, ease: "easeOut" }}
-                        viewport={{ margin: "-100px" }} className="w-72 md:w-auto"><Skillcard /></motion.div>
+                    {skillsData.map((category, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ y: 60, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.7, ease: "easeOut" }}
+                            viewport={{ margin: "-100px" }} className="w-72 md:w-auto"><Skillcard title={category.title} skills={category.skills} icon={category.icon} active={activeIndex === index}
+                                onClick={() => setActiveIndex(index)} /></motion.div>
+                    ))}
                 </div>
             </div>
         </section>
