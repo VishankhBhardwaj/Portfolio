@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Vishank Bhardwaj | Full Stack Developer",
+  title: "Vishankh Bhardwaj | Full Stack Developer",
   description: "Portfolio of Vishank Bhardwaj",
 };
 const playwrite = Playwrite_MX_Guides({
