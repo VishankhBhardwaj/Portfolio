@@ -254,7 +254,7 @@ function SyntaxHighlightedText({
 export function Terminal({
   commands = ["npx shadcn@latest init"],
   outputs = {},
-  username = "Manus-Macbook",
+  username = "Vishankh-Macbook",
   className,
   typingSpeed = 50,
   delayBetweenCommands = 800,

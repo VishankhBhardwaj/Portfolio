@@ -8,7 +8,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import Link from "next/link";
+
 export default function Hero() {
     const { scrollY } = useScroll();
     const nameY = useTransform(scrollY, [0, 500], [0, -200]);
@@ -19,7 +19,7 @@ export default function Hero() {
             <div className="absolute left-0 top-0 right-0 bottom-0 h-full w-full bg-[#0E1016] mix-blend-color"></div>
             <Navbar />
             <div className="w-full max-sm:h-[55%] md:h-[70%] flex flex-col items-center ">
-                <motion.h1 style={{ y: nameY,opacity }} className="font-extrabold  text-[#e4ded7] absolute animate__animated animate__fadeInUp  animate__delay-1s max-sm:text-4xl max-sm:text-center sm:text-6xl md:text-7xl lg:text-9xl top-100 md:top-47 sm:w-full text-center" ><span className="ml-6 max-sm:ml-2">VISHANKH</span> <br /> BHARDWAJ</motion.h1>
+                <motion.h1 style={{ y: nameY,opacity }} className="font-extrabold  text-[#e4ded7] absolute animate__animated animate__fadeInUp  animate__delay-1s max-sm:text-4xl max-sm:text-center sm:text-6xl md:text-7xl lg:text-9xl top-100 md:top-47 sm:w-full text-center" ><span className="mr-6 max-sm:ml-2">VISHANKH</span> <br /> BHARDWAJ</motion.h1>
                 <motion.div style={{y:imageY,opacity}}>
                     <Image
                     data-blobity

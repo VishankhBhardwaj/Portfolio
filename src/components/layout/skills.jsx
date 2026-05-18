@@ -73,7 +73,7 @@ export default function Skills() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
                     viewport={{ amount: 0.3 }}
-                    className="absolute right-3 -top-65 hidden md:block" >
+                    className="absolute -right-4 -top-65 hidden md:block" >
                     <TerminalDemo />
                 </motion.div>
             </motion.div>

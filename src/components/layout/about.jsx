@@ -5,7 +5,7 @@ import TextReveal from '../effects/text-reveal';
 import { motion } from 'framer-motion';
 import textVariants from "../animations/fadeup";
 import Tilt from "react-parallax-tilt";
-
+import { Infinity } from 'lucide-react';
 export default function About() {
     const stack = ["TypeScript", "React", "Next.js", "Node.js", "Python", "PyTorch", "LangChain", "Postgres", "AWS", "Docker"];
 
@@ -110,7 +110,7 @@ export default function About() {
                     transitionSpeed={1200}
                     scale={1.02}
                     glareEnable={false}>
-                    <div className='shadow-2xl shadow-white/30 rounded-2xl'>
+                    <div className='shadow-lg shadow-white/20 hover:shadow-2xl hover:shadow-white/30 rounded-2xl transition-all duration-300 ease-in-out'>
                         <motion.div variants={textVariants} initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }} className='md:col-span-5 grid grid-cols-2 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/10 bg-black opacity-90'>
@@ -124,10 +124,10 @@ export default function About() {
                             </div>
                             <div className='bg-background p-8 md:p-10'>
                                 <div className="text-4xl md:text-5xl font-bold tracking-tight text-white">
-                                    2+
+                                    50K+ 
                                 </div>
                                 <div className='uppercase'>
-                                    years building
+                                    lines written
                                 </div>
                             </div>
                             <div className='bg-background p-8 md:p-10'>
@@ -140,7 +140,7 @@ export default function About() {
                             </div>
                             <div className='bg-background p-8 md:p-10'>
                                 <div className="text-4xl md:text-5xl font-bold tracking-tight text-white">
-                                    ∞
+                                    <Infinity />
                                 </div>
                                 <div className='uppercase'>
                                     coffees brewed

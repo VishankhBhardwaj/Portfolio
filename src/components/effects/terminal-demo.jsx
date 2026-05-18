@@ -6,19 +6,44 @@ export default function TerminalDemo() {
     <section className="w-full py-10 md:py-20" data-blobity>
       <Terminal
         commands={[
-          "npx shadcn@latest init",
-          "npm install motion",
-          "npx shadcn@latest add button card add sidebar add navbar",
-          "Term Deez Nuts",
+          "npm install",
+          "npm run dev",
+          "Initializing portfolio...",
+          "Connecting PostgreSQL database...",
+          "Loading AI workflows...",
+          "Deploying to Vercel...",
+          "Portfolio live at vishankh.dev",
         ]}
         outputs={{
           0: [
-            "✔ Preflight checks passed.",
-            "✔ Created components.json",
-            "✔ Initialized project.",
+            "added 387 packages in 6s",
+            "found 0 vulnerabilities",
           ],
-          1: ["added 1 package in 2s"],
-          2: ["✔ Done. Installed button, card."],
+
+          1: [
+            "▲ Next.js 16.2.6",
+            "✓ Ready on http://localhost:3000",
+          ],
+
+          2: [
+            "UI systems initialized ✔",
+          ],
+
+          3: [
+            "Database connected successfully ✔",
+          ],
+
+          4: [
+            "LangChain pipelines active ✔",
+          ],
+
+          5: [
+            "Production build optimized ✔",
+          ],
+
+          6: [
+            "Deployment completed successfully ✔",
+          ],
         }}
         typingSpeed={45}
         delayBetweenCommands={1000} />
