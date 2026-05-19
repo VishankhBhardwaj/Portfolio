@@ -215,10 +215,10 @@ export default function PortalHero() {
           sizes="100vw"
         />
       </div>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center border">
         <p
         ref={hintRef}
-        className="pointer-events-none absolute bottom-10 left-1/2 -translate-x-1/2 text-xs uppercase tracking-[0.35em] text-white/50 flex gap-3 text-shadow-black float-bounce  items-center justify-around"
+        className="pointer-events-none absolute bottom-10  -translate-x-1/2 text-xs uppercase tracking-[0.35em] text-white flex gap-3 text-shadow-black float-bounce  items-center justify-around"
       >
         Scroll to enter
         <ArrowDown />
