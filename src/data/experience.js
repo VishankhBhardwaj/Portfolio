@@ -33,7 +33,7 @@ export const data = [
         </p>
 
         <p className="text-sm leading-relaxed text-white/70 md:text-base">
-          Solved 500+ algorithmic problems across arrays, graphs, DP,
+          Solved 300+ algorithmic problems across arrays, graphs, DP,
           backtracking, trees, linked lists, and advanced data structures while
           strengthening problem-solving and interview preparation.
         </p>

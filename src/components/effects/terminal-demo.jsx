@@ -3,7 +3,7 @@ import { Terminal } from "@/components/ui/terminal";
 
 export default function TerminalDemo() {
   return (
-    <section className="w-full py-10 md:py-20" data-blobity>
+    <section className="w-full py-10 md:py-20" >
       <Terminal
         commands={[
           "npm install",
