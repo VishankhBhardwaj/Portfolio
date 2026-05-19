@@ -25,7 +25,7 @@ export const data = [
     content: (
       <div>
         <p className="mb-3 text-xl font-semibold text-white">
-          500+ DSA Problems Solved
+          300+ DSA Problems Solved
         </p>
 
         <p className="mb-6 uppercase tracking-[0.3em] text-xs text-white/40">

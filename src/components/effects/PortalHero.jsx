@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
-
+import { ArrowDown } from 'lucide-react';
 const PORTAL_LOCK = "portal:lock";
 const PORTAL_UNLOCK = "portal:unlock";
 const ENTER_THRESHOLD = 0.995;
@@ -215,12 +215,15 @@ export default function PortalHero() {
           sizes="100vw"
         />
       </div>
-      <p
+      <div className="w-full flex justify-center">
+        <p
         ref={hintRef}
-        className="pointer-events-none absolute bottom-10 left-1/2 -translate-x-1/2 text-xs uppercase tracking-[0.35em] text-white/50"
+        className="pointer-events-none absolute bottom-10 left-1/2 -translate-x-1/2 text-xs uppercase tracking-[0.35em] text-white/50 flex gap-3 text-shadow-black float-bounce  items-center justify-around"
       >
         Scroll to enter
+        <ArrowDown />
       </p>
+      </div>
     </div>
   );
 }

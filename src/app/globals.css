@@ -81,3 +81,15 @@ html {
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 0 20px var(--glow-color));
 }
+@keyframes floatBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.float-bounce {
+  animation: floatBounce 1.5s ease-in-out infinite;
+}
