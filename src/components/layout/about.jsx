@@ -7,7 +7,7 @@ import textVariants from "../animations/fadeup";
 import Tilt from "react-parallax-tilt";
 import { Infinity } from 'lucide-react';
 export default function About() {
-    const stack = ["TypeScript", "React", "Next.js", "Node.js", "Python", "PyTorch", "LangChain", "Postgres", "AWS", "Docker"];
+    const stack = ["JavaScript", "React", "Next.js", "Node.js", "Python", "LangChain", "Postgres", "Docker","Tailwind CSS"];
 
     return (
         <section id="about" className='relative w-screen min-h-screen bg-[#0E1016] overflow-hidden p-3 md:p-24'>

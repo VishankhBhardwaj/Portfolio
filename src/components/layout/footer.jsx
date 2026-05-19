@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
             <div className=" flex flex-col md:flex-row justify-around text-xs gap-3 md:gap-0">
                 <p className="text-xs tracking-[0.2em] text-white/60">
-                    ✧ Designed & Built by Vishankh Bhardwaj
+                    ✧ Designed & Built by <span data-blobity className="underline underline-offset-6 decoration-1">Vishankh Bhardwaj</span>
                 </p>
                 <div className="text-center text-xs uppercase tracking-[0.3em] text-white/20">
 
