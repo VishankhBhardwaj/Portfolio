@@ -5,6 +5,8 @@ import { useEffect } from "react";
 
 const PORTAL_LOCK = "portal:lock";
 const PORTAL_UNLOCK = "portal:unlock";
+/** Must match PortalHero — no portal on small viewports, Lenis must scroll. */
+const MOBILE_MQ = "(max-width: 767px)";
 
 export default function SmoothScrolling({ children }) {
   useEffect(() => {
@@ -14,7 +16,15 @@ export default function SmoothScrolling({ children }) {
       smoothTouch: true,
     });
 
-    lenis.stop();
+    const isMobileViewport = () => window.matchMedia(MOBILE_MQ).matches;
+
+    // PortalHero runs useLayoutEffect before this effect; on mobile it fires
+    // PORTAL_UNLOCK before listeners exist, so we start Lenis when there is no portal.
+    if (isMobileViewport()) {
+      lenis.start();
+    } else {
+      lenis.stop();
+    }
 
     const onLock = () => lenis.stop();
     const onUnlock = () => lenis.start();
