@@ -32,7 +32,7 @@ export default function Navbar() {
                     target="_blank"
                     aria-label="LINKEDIN"><li>LN</li></Link></div>
                     <div data-blobity className="  w-[13%] h-[50px] text-center max-sm:w-auto"><Link
-                    href="https://leetcode.com/u/Dark_Fello/"
+                    href=""
                     target="_blank"
                     aria-label="LEETCODE"><li>LC</li></Link></div>
                 </ul>
